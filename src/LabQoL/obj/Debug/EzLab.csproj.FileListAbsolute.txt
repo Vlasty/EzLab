@@ -1,0 +1,6 @@
+C:\projects\PoEHUD\Release\plugins\EzLab\src\LabQoL\obj\Debug\EzLab.csproj.CoreCompileInputs.cache
+C:\projects\PoEHUD\Release\plugins\EzLab\EzLab.dll.config
+C:\projects\PoEHUD\Release\plugins\EzLab\src\LabQoL\obj\Debug\EzLab.dll
+C:\projects\PoEHUD\Release\plugins\EzLab\src\LabQoL\obj\Debug\EzLab.pdb
+C:\projects\PoEHUD\Release\plugins\EzLab\EzLab.dll
+C:\projects\PoEHUD\Release\plugins\EzLab\EzLab.pdb
