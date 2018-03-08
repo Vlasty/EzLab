@@ -49,7 +49,7 @@ namespace EzLab
                         var chestScreenCoords = camera.WorldToScreen(entity.Pos.Translate(0, 0, 0), entity);
                         if (chestScreenCoords == new Vector2()) continue;
                         var iconRect = new Vector2(chestScreenCoords.X, chestScreenCoords.Y);
-                        Graphics.DrawText(text, 20, iconRect, color, FontDrawFlags.Center);
+                        Graphics.DrawText(text, 30, iconRect, color, FontDrawFlags.Center);
                     }
             }
             catch (Exception)
@@ -62,50 +62,54 @@ namespace EzLab
         {
             base.Render();
 
-            RenderTextLabel(Color.Gray, "Low currency 1", "IzaroChest1");
+            //very good
+            RenderTextLabel(Color.DarkOrange, "Diviner 13", "IzaroChest13");
+            RenderTextLabel(Color.DarkOrange, "2 keys + uniq 18", "IzaroChest18");
+            RenderTextLabel(Color.DarkOrange, "Maps 19", "IzaroChest19");
+            RenderTextLabel(Color.DarkOrange, "Maps 22", "IzaroChest22");
+            RenderTextLabel(Color.DarkOrange, "Corrupted 2 midnights 23", "IzaroChest23");
+            RenderTextLabel(Color.DarkOrange, "High Currency 25", "IzaroChest25");
+            RenderTextLabel(Color.DarkOrange, "Armour ~6S 32", "IzaroChest32");
+            RenderTextLabel(Color.DarkOrange, "2 keys + uniq 36", "IzaroChest36");
+            RenderTextLabel(Color.DarkOrange, "Corrupted 0 atziri 37", "IzaroChest37");
+            RenderTextLabel(Color.DarkOrange, "Offering to the goddes 39", "IzaroChest39");
+
+            //easy to sell
+            RenderTextLabel(Color.Yellow, "3x Uniques 35", "IzaroChest35");
+            RenderTextLabel(Color.Yellow, "Low currency 1", "IzaroChest1");
             RenderTextLabel(Color.Yellow, "Mid currency 2", "IzaroChest2");
-            RenderTextLabel(Color.Gray, "Low currency 3", "IzaroChest3");
-            RenderTextLabel(Color.Gray, "Izaro Chest 4", "IzaroChest4");
+            RenderTextLabel(Color.Yellow, "Low currency 3", "IzaroChest3");
             RenderTextLabel(Color.Yellow, "qCurrency 5", "IzaroChest5");
             RenderTextLabel(Color.Yellow, "qCurrency 6", "IzaroChest6");
+            RenderTextLabel(Color.Yellow, "Mid currency 26", "IzaroChest26");
+            RenderTextLabel(Color.Yellow, "Low currency 27", "IzaroChest27");
+            RenderTextLabel(Color.Yellow, "qCurrency 28", "IzaroChest28");
+
+            //good early league
+            RenderTextLabel(Color.Green, "Gems 38", "IzaroChest38");
+            RenderTextLabel(Color.Green, "Gems 24", "IzaroChest24");
+            RenderTextLabel(Color.Green, "Gems 41", "IzaroChest41");
+            RenderTextLabel(Color.Green, "84ilvl armour 21", "IzaroChest21");
+            RenderTextLabel(Color.Green, "84ilvl weapons 40", "IzaroChest40");
+
+            //trash
+            RenderTextLabel(Color.Gray, "Jewelry 29", "IzaroChest29");
+            RenderTextLabel(Color.Gray, "Jewelry 30", "IzaroChest30");
+            RenderTextLabel(Color.Gray, "Armour trash 31", "IzaroChest31");
+            RenderTextLabel(Color.Gray, "Weapons trash 33", "IzaroChest33");
+            RenderTextLabel(Color.Gray, "Generic 34", "IzaroChest34");
+            RenderTextLabel(Color.Gray, "Izaro Chest 4", "IzaroChest4");
             RenderTextLabel(Color.Gray, "jewelry 7", "IzaroChest7");
             RenderTextLabel(Color.Gray, "jewelry 8", "IzaroChest8");
             RenderTextLabel(Color.Gray, "trash 9", "IzaroChest9");
             RenderTextLabel(Color.Gray, "trash 10", "IzaroChest10");
-
             RenderTextLabel(Color.Gray, "weapon trash 11", "IzaroChest11");
             RenderTextLabel(Color.Gray, "Izaro Chest 12", "IzaroChest12");
-            RenderTextLabel(Color.Red, "Diviner 13", "IzaroChest13");
             RenderTextLabel(Color.Gray, "trash 14", "IzaroChest14");
             RenderTextLabel(Color.Gray, "Generic 15", "IzaroChest15");
             RenderTextLabel(Color.Gray, "Generic 16", "IzaroChest16");
             RenderTextLabel(Color.Gray, "armour+weapon 17", "IzaroChest17");
-            RenderTextLabel(Color.Red, "2 keys + uniq 18", "IzaroChest18");
-            RenderTextLabel(Color.Red, "Maps 19", "IzaroChest19");
             RenderTextLabel(Color.Gray, "Izaro Chest 20", "IzaroChest20");
-
-            RenderTextLabel(Color.Red, "84ilvl armour 21", "IzaroChest21");
-            RenderTextLabel(Color.Red, "Maps 22", "IzaroChest22");
-            RenderTextLabel(Color.Red, "Corrupted 2 midnights 23", "IzaroChest23");
-            RenderTextLabel(Color.Yellow, "Gems 24", "IzaroChest24");
-            RenderTextLabel(Color.Red, "High Currency 25", "IzaroChest25");
-            RenderTextLabel(Color.Yellow, "Mid currency 26", "IzaroChest26");
-            RenderTextLabel(Color.Gray, "Low currency 27", "IzaroChest27");
-            RenderTextLabel(Color.Yellow, "qCurrency 28", "IzaroChest28");
-            RenderTextLabel(Color.Gray, "Jewelry 29", "IzaroChest29");
-            RenderTextLabel(Color.Gray, "Jewelry 30", "IzaroChest30");
-
-            RenderTextLabel(Color.Gray, "Armour trash 31", "IzaroChest31");
-            RenderTextLabel(Color.Red, "Armour ~6S 32", "IzaroChest32");
-            RenderTextLabel(Color.Gray, "Weapons trash 33", "IzaroChest33");
-            RenderTextLabel(Color.Gray, "Generic 34", "IzaroChest34");
-            RenderTextLabel(Color.Yellow, "3x Uniques 35", "IzaroChest35");
-            RenderTextLabel(Color.Red, "2 keys + uniq 36", "IzaroChest36");
-            RenderTextLabel(Color.Yellow, "Corrupted 0 atziri 37", "IzaroChest37");
-            RenderTextLabel(Color.Yellow, "Gems 38", "IzaroChest38");
-            RenderTextLabel(Color.Red, "Offering to the goddes 39", "IzaroChest39");
-            RenderTextLabel(Color.Yellow, "84ilvl weapons 40", "IzaroChest40");
-            RenderTextLabel(Color.Yellow, "Gems 41", "IzaroChest41");
         }
     }
 
