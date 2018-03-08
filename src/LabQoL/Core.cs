@@ -10,7 +10,7 @@ namespace EzLab
 {
     public class EzLab : BaseSettingsPlugin<EzLabSettings>
     {
-        public const string Version = "1.1";
+        public const string Version = "1.2";
         public static int Selected;
 
         public static string[] SettingName =
@@ -43,20 +43,10 @@ namespace EzLab
             {
                 var camera = GameController.Game.IngameState.Camera;
 
-                var baseY = 0;
-                if (color == (ColorBGRA)Color.Yellow)
-                {
-                    baseY = 20;
-                }
-                else if (color == (ColorBGRA)Color.Red)
-                {
-                    baseY = 40;
-                }
-
                 foreach (var entity in _entityCollection)
-                    if (entity.Path.ToLower().Contains(path.ToLower()))
+                    if (entity.Path.ToLower().EndsWith(path.ToLower()))
                     {
-                        var chestScreenCoords = camera.WorldToScreen(entity.Pos.Translate(0, baseY, 0), entity);
+                        var chestScreenCoords = camera.WorldToScreen(entity.Pos.Translate(0, 0, 0), entity);
                         if (chestScreenCoords == new Vector2()) continue;
                         var iconRect = new Vector2(chestScreenCoords.X, chestScreenCoords.Y);
                         Graphics.DrawText(text, 20, iconRect, color, FontDrawFlags.Center);

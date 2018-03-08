@@ -4,3 +4,4 @@ C:\projects\PoEHUD\Release\plugins\EzLab\src\LabQoL\obj\Debug\EzLab.dll
 C:\projects\PoEHUD\Release\plugins\EzLab\src\LabQoL\obj\Debug\EzLab.pdb
 C:\projects\PoEHUD\Release\plugins\EzLab\EzLab.dll
 C:\projects\PoEHUD\Release\plugins\EzLab\EzLab.pdb
+C:\projects\PoEHUD\Release\plugins\EzLab\src\LabQoL\obj\Debug\EzLab.csprojResolveAssemblyReference.cache
